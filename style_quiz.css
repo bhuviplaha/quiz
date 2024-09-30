@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #e9f5ff 50%, #ffffff 50%); /* Twinning color effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .numerical_section {
+    background-color: #ffffff; /* White background for the quiz container */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 800px; /* Fixed width for the quiz */
+    text-align: center;
+  }
+  
+  .question {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333; /* Dark text color */
+  }
+  
+  hr {
+    margin: 15px 0; /* Spacing around the horizontal line */
+    border: 1px solid #e0e0e0; /* Light gray line */
+  }
+  
+  ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin-bottom: 20px; /* Space below the list */
+  }
+  
+  li {
+    margin: 10px 0; /* Space between radio options */
+    font-size: 18px;
+  }
+  
+  input[type="radio"] {
+    display: none; /* Hide default radio button */
+  }
+  
+  label {
+    display: inline-block;
+    background-color: #f0f8ff; /* Light blue background for options */
+    border: 2px solid #007bff; /* Border color */
+    border-radius: 20px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside the button */
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+    width: 100%; /* Full width for labels */
+    text-align: left; /* Align text to the left */
+  }
+  
+  input[type="radio"]:checked + label {
+    background-color: #007bff; /* Highlight selected option */
+    color: white; /* Change text color */
+    border-color: #0056b3; /* Darker border color for selected option */
+  }
+  
+  .button {
+    margin-top: 20px; /* Space above the button */
+  }
+  
+  #Submit {
+    background-color: #007bff; /* Primary button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+  }
+  
+  #Submit:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
